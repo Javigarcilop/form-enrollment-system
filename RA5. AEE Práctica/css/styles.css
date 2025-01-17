@@ -1,0 +1,258 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: white;
+    padding: 2.5em 3em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sección general */
+fieldset {
+    border: none;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+/* Leyenda */
+legend {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+/* Etiquetas */
+label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.6em;
+}
+
+/* Entradas de texto y selección */
+input, select {
+    padding: 0.75em;
+    font-size: 1em;
+    margin-bottom: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focus en las entradas */
+input:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #f2f8ff;
+}
+
+/* Estilos del botón */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Texto de campos requeridos */
+.required {
+    color: #d9534f;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+/* Familiares */
+.familiar {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Ajuste de márgenes para los campos de familiares */
+.familiar > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+/* Los campos de texto y selects dentro de la sección de familiares */
+.familiar > div input, .familiar > div select {
+    width: 100%;
+}
+
+/* Para evitar márgenes adicionales en familiares */
+.familiar > div label {
+    margin-bottom: 0.5em; /* Igual que en otras secciones */
+}
+
+.familiar > div input, .familiar > div select {
+    margin-bottom: 1em; /* Igual que en otras secciones */
+}
+
+/* Select múltiple */
+select[multiple] {
+    height: auto;
+    min-height: 120px;
+}
+
+/* Estilos para el botón de "Añadir Familiar" */
+#add-familiar-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2em;
+}
+
+#add-familiar-btn:hover {
+    background-color: #218838;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2em;
+    border-radius: 12px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 2em;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Estilos adicionales para mejorar la disposición */
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+/* Campos de texto y selects más estrechos en pantallas pequeñas */
+input, select {
+    width: 48%;
+}
+
+/* Alineación de botones */
+button {
+    width: 100%;
+}
+
+/* Sección de familiares: Márgenes consistentes con el formulario principal */
+.familiar {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.familiar > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.familiar > div input, .familiar > div select {
+    width: 100%;
+}
