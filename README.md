@@ -19,3 +19,19 @@ Este proyecto es un formulario web diseñado para recopilar y gestionar los dato
 - **JSON**: Fuente de datos dinámica para opciones del formulario.
 
 ## Estructura del Proyecto
+
+project/
+├── css/
+│   └── styles.css          # Estilos de la aplicación
+├── js/
+│   ├── alumnoBuilder.js    # Clase para construir objetos de alumnos
+│   ├── gestionFormulario.js# Lógica del formulario
+├── data/
+│   └── data.json           # Archivo con datos para los selects
+├── html/
+│   └── form.html           # Archivo HTML principal
+
+## Cómo ejecutar el proyecto
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Javigarcilop/Form-Enrollment-System.git
