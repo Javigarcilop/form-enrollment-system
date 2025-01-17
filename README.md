@@ -34,4 +34,4 @@ project/
 ## Cómo ejecutar el proyecto
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/Javigarcilop/Form-Enrollment-System.git
+   git clone https://github.com/Javigarcilop/form-enrollment-system.git
