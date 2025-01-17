@@ -32,6 +32,6 @@ project/
 │   └── form.html           # Archivo HTML principal
 
 ## Cómo ejecutar el proyecto
-1. Clona este repositorio:
+ Clona este repositorio:
    ```bash
    git clone https://github.com/Javigarcilop/form-enrollment-system.git
