@@ -87,12 +87,12 @@
           <button type="button" class="eliminar-familiar-btn">Eliminar Familiar</button>
         `;
          // Agregar el nuevo familiar al contenedor
-  container.appendChild(nuevoFamiliar);
+         container.appendChild(nuevoFamiliar);
 
-  // Evento para eliminar un familiar
-  nuevoFamiliar.querySelector(".eliminar-familiar-btn").addEventListener("click", function () {
-    container.removeChild(nuevoFamiliar);
-  });
+         // Evento para eliminar un familiar
+         nuevoFamiliar.querySelector(".eliminar-familiar-btn").addEventListener("click", function () {
+         container.removeChild(nuevoFamiliar);
+         });
 
 
         // Llenar los selects de profesiones, ciudades y demás para los familiares
